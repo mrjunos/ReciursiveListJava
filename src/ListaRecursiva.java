@@ -1,40 +1,17 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class ListaRecursiva {
     public static void main(String[] args) {
-        //System.out.println(factorial(5));
-        List<String> lista = new ArrayList<>();
-        System.out.println(lista.toString());
-        lista.add("Hola");
-        lista.add("Jeff");
-        lista.add("Puto");
-        lista.add("YaNo");
-        System.out.println(lista.size());
-        System.out.println(lista.toString());
-        System.out.println(lista.remove(2));
-        System.out.println(lista.toString());
-
-        System.out.println("-.-.-.-.-.-.-.-.-.-.-.-.-.-");
-
         Element miLista = new Element();
         System.out.println(miLista.toString());
-        miLista.add("Hola");
-        miLista.add("Jeff");
-        miLista.add("Puto");
-        miLista.add("YaNo");
+        miLista.add("Var1");
+        miLista.add("Var2");
+        miLista.add("Var3");
+        miLista.add("Var4");
+        System.out.println(miLista.isEmpty());
+        System.out.println(miLista.get(2));
         System.out.println(miLista.size());
         System.out.println(miLista.toString());
         System.out.println(miLista.remove(2));
         System.out.println(miLista.toString());
-    }
-
-    private static int factorial(int n) {
-        if (n == 0) {
-            return 1;
-        } else {
-            return n * factorial(n - 1);
-        }
     }
 }
 
